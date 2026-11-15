@@ -1,0 +1,11 @@
+মোবাইল দিয়ে APK বানানোর সহজ পদ্ধতি (GitHub Actions)
+
+১) ZIP ফাইলটি ফোনে Download করে Extract করুন।
+২) github.com এ অ্যাকাউন্ট খুলে New repository তৈরি করুন; নাম দিন CasinoAnalysis।
+৩) Extract করা ফোল্ডারের ভেতরের সব ফাইল GitHub repository-তে Upload files দিয়ে আপলোড করে Commit changes করুন। .github ফোল্ডারটিও আপলোড করতে হবে।
+৪) Repository > Actions এ যান। প্রথমবার workflow চালু করতে “I understand my workflows, go ahead and enable them” দেখালে চাপুন।
+৫) “Build Android APK” workflow নির্বাচন করে “Run workflow” চাপুন।
+৬) কাজ শেষ হলে সবুজ checkmark এ চাপুন, নিচে Artifacts থেকে CasinoAnalysis-debug-apk ডাউনলোড করুন।
+৭) ZIP artifact Extract করলে app-debug.apk পাবেন। সেটি ফোনে ইনস্টল করুন। Android চাইলে “Install unknown apps” অনুমতি দিন।
+
+নোট: APK তৈরি হতে কয়েক মিনিট লাগতে পারে। এটি debug APK; Play Store release signing নয়।
